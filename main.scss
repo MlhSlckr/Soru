@@ -31,10 +31,11 @@
     padding-right: 10px;
     padding-left: 10px;
     letter-spacing: 5px;
-    .far {
+    .fas {
       cursor: pointer;
       color: #c59d5f;
       font-size: 30px;
+      transition: 300ms all;
     }
   }
   &-text {
@@ -52,4 +53,8 @@
   > .article-text {
     display: block;
   }
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
