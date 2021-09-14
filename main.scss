@@ -39,19 +39,23 @@
     }
   }
   &-text {
-    border-top: 1px solid #c59d5f;
-    padding-top: 20px;
     color: hsl(210, 22%, 49%);
-    line-height: 150%;
     font-size: 18px;
-    margin-top: 20px;
-    display: none;
+    height: 0;
+    opacity: 0;
+    transition: 300ms all;
   }
 }
 
 .show {
   > .article-text {
-    display: block;
+    opacity: 1;
+    border-top: 1px solid #c59d5f;
+    height: auto;
+    overflow: auto;
+    line-height: 150%;
+    padding-top: 20px;
+    margin-top: 20px;
   }
 }
 
